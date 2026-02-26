@@ -3,7 +3,7 @@ name = "laboratorio"
 version = "0.1.0"
 description = "Laboratorios"
 authors = [
-    {name = "brandone12",email = "brandonquezada02@gmail.com"}
+    {name = "brandone12"}
 ]
 readme = "README.md"
 requires-python = ">=3.13"
