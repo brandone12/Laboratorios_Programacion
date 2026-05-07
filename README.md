@@ -158,6 +158,42 @@ exit
 - Los notebooks están organizados por semanas y progresivamente cubren temas desde lo básico hasta análisis de datos
 - Cada notebook es independiente y puede ejecutarse por separado
 
+## 🔍 Solución de Problemas
+
+### Poetry no se reconoce como comando
+
+Si después de instalar Poetry el comando `poetry` no es reconocido:
+
+- **Windows**: Agrega `%APPDATA%\Python\Scripts` al PATH del sistema
+- **macOS/Linux**: Agrega `$HOME/.local/bin` al PATH (`export PATH="$HOME/.local/bin:$PATH"`)
+- Cierra y vuelve a abrir la terminal después de agregarlo al PATH
+
+### El kernel de Python no aparece en Jupyter
+
+Si al abrir un notebook no encuentras el entorno virtual de Poetry:
+
+```bash
+# Registrar el entorno virtual como kernel de Jupyter
+poetry run python -m ipykernel install --user --name=lab-python --display-name="Python (Laboratorios)"
+```
+
+### Error de dependencias al ejecutar `poetry install`
+
+```bash
+# Asegúrate de tener Python 3.13 o superior
+python --version
+
+# Si hay conflictos, actualiza el lock file
+poetry lock --no-update
+poetry install
+```
+
+### El archivo .ipynb no se abre correctamente en VS Code
+
+1. Asegúrate de tener instalada la extensión de **Jupyter** en VS Code
+2. Abre la paleta de comandos (`Ctrl+Shift+P`) y selecciona `Python: Select Interpreter`
+3. Elige el intérprete del entorno virtual de Poetry (usualmente en `.venv/Scripts/python.exe`)
+
 ## 👤 Autor
 
 Brandon Quezada - brandonquezada02@gmail.com
