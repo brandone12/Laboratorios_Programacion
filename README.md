@@ -1,6 +1,6 @@
 # Laboratorios de Programación para Analítica Web
 
-Repositorio con los laboratorios y ejercicios prácticos del curso de Programación para Analítica Web, organizados por cohortes y semanas.
+Repositorio con los laboratorios y ejercicios prácticos del curso de Programación para Analítica Web, organizados por cohortes y semanas. Incluye materiales del Cohorte I y del Cohorte II.
 
 ## 📋 Requisitos Previos
 
@@ -105,26 +105,37 @@ poetry run jupyter notebook
 Laboratorios/
 ├── pyproject.toml          # Configuración del proyecto y dependencias
 ├── README.md               # Este archivo
-└── Cohorte I/
-    ├── Semana 1/          # Fundamentos de Python
-    │   ├── PY0101EN-1-1-Write_your_first_python_code.ipynb
-    │   ├── PY0101EN-1-2-Strings.ipynb
-    │   ├── PY0101EN-2-1-Tuples.ipynb
-    │   ├── PY0101EN-2-2-Lists.ipynb
-    │   ├── PY0101EN-2-3-Sets.ipynb
-    │   └── PY0101EN-2-4-Dictionaries.ipynb
-    ├── Semana 2/          # Control de flujo y archivos
-    │   ├── 3-1.2ExcecptionHandling.ipynb
-    │   ├── PY0101EN-3-1-Conditions.ipynb
-    │   ├── PY0101EN-3-2-Loops.ipynb
-    │   ├── PY0101EN-3-3-Functions.ipynb
-    │   ├── PY0101EN-4-1-ReadFile.ipynb
-    │   └── PY0101EN-4-2-WriteFile.ipynb
-    └── Semana 3/          # Pandas y NumPy
-        ├── DA0101EN-Review-Introduction.jupyterlite.ipynb
-        ├── Module 4_Pandas_Practice.ipynb
-        ├── Module 5_PY0101EN-5-1-Numpy1D.ipynb
-        └── Module 5_PY0101EN-5-2-Numpy2D.ipynb
+├── Cohorte I/
+│   ├── Semana 1/          # Fundamentos de Python
+│   │   ├── PY0101EN-1-1-Write_your_first_python_code.ipynb
+│   │   ├── PY0101EN-1-2-Strings.ipynb
+│   │   ├── PY0101EN-2-1-Tuples.ipynb
+│   │   ├── PY0101EN-2-2-Lists.ipynb
+│   │   ├── PY0101EN-2-3-Sets.ipynb
+│   │   └── PY0101EN-2-4-Dictionaries.ipynb
+│   ├── Semana 2/          # Control de flujo y archivos
+│   │   ├── 3-1.2ExcecptionHandling.ipynb
+│   │   ├── PY0101EN-3-1-Conditions.ipynb
+│   │   ├── PY0101EN-3-2-Loops.ipynb
+│   │   ├── PY0101EN-3-3-Functions .ipynb
+│   │   ├── PY0101EN-4-1-ReadFile.ipynb
+│   │   └── PY0101EN-4-2-WriteFile.ipynb
+│   └── Semana 3/          # Pandas y NumPy
+│       ├── DA0101EN-Review-Introduction.jupyterlite.ipynb
+│       ├── Module 4_Pandas_Practice.ipynb
+│       ├── Module 5_PY0101EN-5-1-Numpy1D.ipynb
+│       └── Module 5_PY0101EN-5-2-Numpy2D.ipynb
+└── Cohorte II/
+    ├── Data-Wrangling/    # Limpieza y transformación de datos
+    │   ├── clean_df.csv
+    │   └── DA0101EN-2-Review-Data-Wrangling.ipynb
+    └── EDA/               # Análisis exploratorio de datos
+        ├── employees.csv
+        └── Wine/
+            ├── DA0101EN-3-Review-Exploratory-Data-Analysis.ipynb
+            ├── winequality-red.csv
+            ├── winequality-white.csv
+            └── winequality.names
 ```
 
 ## 📦 Dependencias Principales
@@ -132,6 +143,7 @@ Laboratorios/
 - **pandas** (>=3.0.1): Análisis y manipulación de datos
 - **numpy** (>=2.4.2): Computación numérica
 - **ipykernel** (>=7.2.0): Kernel de Python para Jupyter
+- **matplotlib** (>=3.10.9): Visualización de datos
 
 ## 🔧 Comandos Útiles de Poetry
 
@@ -156,6 +168,7 @@ exit
 
 - Asegúrate de tener Python 3.13 o superior instalado en tu sistema
 - Los notebooks están organizados por semanas y progresivamente cubren temas desde lo básico hasta análisis de datos
+- El Cohorte II agrega práctica de Data Wrangling y Exploratory Data Analysis con archivos CSV y notebooks de apoyo
 - Cada notebook es independiente y puede ejecutarse por separado
 
 ## 🔍 Solución de Problemas
@@ -196,7 +209,7 @@ poetry install
 
 ## 👤 Autor
 
-Brandon Quezada - brandonquezada02@gmail.com
+Brandon Quezada
 
 ## 📄 Licencia
 
