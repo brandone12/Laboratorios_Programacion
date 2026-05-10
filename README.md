@@ -66,7 +66,7 @@ poetry install
 
 Este comando:
 - Creará un entorno virtual automáticamente
-- Instalará todas las dependencias especificadas en `pyproject.toml` (pandas, numpy, ipykernel)
+- Instalará todas las dependencias especificadas en `pyproject.toml` (pandas, numpy, ipykernel, matplotlib, seaborn, scipy)
 
 ### 4. Activar el Entorno Virtual
 
@@ -144,6 +144,8 @@ Laboratorios/
 - **numpy** (>=2.4.2): Computación numérica
 - **ipykernel** (>=7.2.0): Kernel de Python para Jupyter
 - **matplotlib** (>=3.10.9): Visualización de datos
+- **seaborn** (>=0.13.2): Visualización estadística de datos
+- **scipy** (>=1.17.1): Computación científica y estadística
 
 ## 🔧 Comandos Útiles de Poetry
 
